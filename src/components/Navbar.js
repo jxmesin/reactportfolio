@@ -6,15 +6,16 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function Bar() {
   return (
-    <Navbar bg="dark" expand="lg">
-      <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+    <Navbar bg="white" expand="lg">
+      <Container className="justify-content-center">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#home">About Me</Nav.Link>
             <Nav.Link href="#link">Work</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+            <Nav.Link href="#home">Experience</Nav.Link>
+            <Nav.Link href="#link">Contact</Nav.Link>
+            <NavDropdown  id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
