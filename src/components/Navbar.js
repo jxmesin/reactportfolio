@@ -4,18 +4,19 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-function Bar() {
+function NavBar() {
   return (
-    <Navbar bg="white" expand="lg">
+    <Navbar className="navBar-bg" expand="lg">
       <Container className="justify-content-center">
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="navMenu" />
+        <Navbar.Collapse id="basic-navbar-nav" className="navMenu">
           <Nav className="me-auto">
-            <Nav.Link href="#home">About Me</Nav.Link>
-            <Nav.Link href="#link">Work</Nav.Link>
-            <Nav.Link href="#home">Experience</Nav.Link>
-            <Nav.Link href="#link">Contact</Nav.Link>
-            <NavDropdown  id="basic-nav-dropdown">
+            <Nav.Link href="#home" className="navLink">About Me</Nav.Link>
+            <Nav.Link href="#link" className="navLink">Work</Nav.Link>
+            <Nav.Link href="#home" className="navLink">Experience</Nav.Link>
+            <Nav.Link href="#link" className="navLink">Contact</Nav.Link>
+            
+            <NavDropdown  id="basic-nav-dropdown" >
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
@@ -33,4 +34,4 @@ function Bar() {
   );
 }
 
-export default Bar;
+export default NavBar;
